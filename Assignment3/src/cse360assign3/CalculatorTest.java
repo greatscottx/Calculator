@@ -51,7 +51,7 @@ public class CalculatorTest {
 	public void testHistory() {
 		Calculator test = new Calculator();
 		String temp = test.getHistory();
-		assertEquals("", temp);
+		assertEquals("0", temp);
 	}
 
 
