@@ -23,28 +23,28 @@ public class CalculatorTest {
 	public void testAdd() {
 		Calculator test = new Calculator();		//since test is new Object, total should equal 0
 		test.add(3);
-		assertEquals(3, test.getTotal() + 3);	//since total = 0, 0+3 should equal 3
+		assertEquals(3, test.getTotal());	//since total = 0, 0+3 should equal 3
 	}
 
 	@Test
 	public void testSubtract() {
 		Calculator test = new Calculator();		//since test is new Object, total should equal 0
 		test.subtract(1);
-		assertEquals(-1, test.getTotal() - 1);	//since total = 0, 0-1 should equal -1
+		assertEquals(0-1, test.getTotal());	//since total = 0, 0-1 should equal -1
 	}
 	
 	@Test
 	public void testMultiply() {	
 		Calculator test = new Calculator();		//since test is new Object, total should equal 0
 		test.multiply(3);	
-		assertEquals(0, test.getTotal() * 3);	//since total = 0, 0*3 should equal 0
+		assertEquals(0, test.getTotal());	//since total = 0, 0*3 should equal 0
 	}
 
 	@Test
 	public void testDivide() {
 		Calculator test = new Calculator();		//since test is new Object, total should equal 0
 		test.divide(1);
-		assertEquals(0, test.getTotal() / 1);	//since total = 0, 0/1 should equal 0
+		assertEquals(0, test.getTotal());	//since total = 0, 0/1 should equal 0
 	}
 
 	@Test
