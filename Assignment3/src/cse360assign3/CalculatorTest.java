@@ -45,7 +45,6 @@ public class CalculatorTest {
 		Calculator test = new Calculator();		//since test is new Object, total should equal 0
 		test.divide(1);
 		assertEquals(0, test.getTotal() / 1);	//since total = 0, 0/1 should equal 0
-		
 	}
 
 	@Test

@@ -13,7 +13,7 @@ public class Calculator {
 	}
 	
 	public void add (int value) {
-		this.total += value;
+		this.total = total + value;
 	}
 	
 	public void subtract (int value) {
