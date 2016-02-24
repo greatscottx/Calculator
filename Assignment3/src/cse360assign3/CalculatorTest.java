@@ -49,7 +49,9 @@ public class CalculatorTest {
 
 	@Test
 	public void testHistory() {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		String temp = test.getHistory();
+		assertEquals("", temp);
 	}
 
 
