@@ -3,9 +3,11 @@ package cse360assign3;
 public class Calculator {
 
 	private int total;
+	private String history;
 	
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		history = "0";
 	}
 	
 	public int getTotal () {
@@ -14,14 +16,17 @@ public class Calculator {
 	
 	public void add (int value) {
 		this.total = total + value;		//adds value
+		this.history += " + " + value;
 	}
 	
 	public void subtract (int value) {
 		this.total = total - value;		//subtracts value
+		this.history += " - " + value;
 	}
 	
 	public void multiply (int value) {
 		this.total = total * value;		//multiplies value
+		this.history += " * " + value;
 	}
 	
 	public void divide (int value) {
@@ -31,9 +36,10 @@ public class Calculator {
 		else{
 			total = total / value;		//else return int answer of total/value
 		}
+		history += " / " + value;
 	}
 	
 	public String getHistory () {
-		return "";						//return empty string (for now)
+		return history;						//return string history
 	}
 }
